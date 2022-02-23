@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Utah Avian Adoption :: Adoption Form</title>
+    <meta charset="utf-8">
+    <link href="avian.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Utah Avian Adoption</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adoptionlist.html">Adoption List</a></li>
+                <li><a href="adoptionform.html">Adoption Form</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Adoption Package Form</h2>
+
+            <p>Fill out the information below! If you just want to contact us for separate reasons, please contact over
+                email.</p>
+
+            <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                <h3>Contact Us Today!</h3>
+                <p>
+                    Required fields are marked with an asterisk *
+                </p>
+                <label for="myFName">*First Name:</label>
+                <input type="text" name="myFName" id="myFName" required="required">
+
+                <label for="myLName">*Last Name:</label>
+                <input type="text" name="myLName" id="myLName" required="required">
+
+                <label for="myEmail">*E-Mail Address:</label>
+                <input type="email" name="myEmail" id="myEmail" size="32" required="required">
+
+                <label for="myPackage">*Package:</label>
+                <select size="1" id="myPackage" name="myPackage" required="required">
+                    <option value="">Select your package!</option>
+                    <option value="No Package">No Package</option>
+                    <option value="Full Package">Full Package</option>
+                    <option value="Photoshoot Package">Photoshoot Package</option>
+                    <option value="Costume Package">Costume Package</option>
+                    <option value="Handling Package">Handling Package</option>
+                </select>
+                <label for="myComments">Comments:</label>
+                <textarea name="myComments" id="myComments" rows="2" cols="30"></textarea>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+            <br>
+        </main>
+
+        <footer>
+            <strong><i>
+                    Copyright &copy; 2022 <span class="org">Utah Avian Adoption</span><br>
+                    <a href="mailto:nikroybal13@gmail.com">
+                        nikroybal13@gmail.com
+                    </a>
+                </i></strong>
+        </footer>
+    </div>
+</body>
+
+</html>
